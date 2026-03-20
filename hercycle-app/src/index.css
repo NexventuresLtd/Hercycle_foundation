@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── CSS Variables ─── */
+:root {
+  --brand-pink:         #e8216b;
+  --brand-pink-dark:    #c9185a;
+  --brand-purple:       #7b2fbf;
+  --brand-purple-dark:  #6a25a8;
+  --brand-dark:         #0f0a1a;
+}
+
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: 'Inter', system-ui, sans-serif;
+    background: #ffffff;
+    color: #1f2937;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4 { font-family: 'Playfair Display', Georgia, serif; }
+  img { max-width: 100%; display: block; }
+}
+
+@layer components {
+  /* ── Buttons ── */
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-semibold text-white text-sm tracking-wide
+           transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 active:scale-95;
+    background-color: var(--brand-pink);
+  }
+  .btn-primary:hover { background-color: var(--brand-pink-dark); }
+
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-semibold text-white text-sm tracking-wide
+           transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 active:scale-95;
+    background-color: var(--brand-purple);
+  }
+  .btn-secondary:hover { background-color: var(--brand-purple-dark); }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-semibold text-sm tracking-wide
+           border-2 transition-all duration-200 hover:-translate-y-0.5 active:scale-95;
+    border-color: var(--brand-pink);
+    color: var(--brand-pink);
+  }
+  .btn-outline:hover {
+    background-color: var(--brand-pink);
+    @apply text-white;
+  }
+
+  .btn-outline-white {
+    @apply inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-semibold text-sm tracking-wide
+           border-2 border-white text-white transition-all duration-200 hover:bg-white hover:text-gray-900 hover:-translate-y-0.5 active:scale-95;
+  }
+
+  /* ── Cards ── */
+  .card {
+    @apply bg-white rounded-2xl shadow-sm border border-gray-100 p-6
+           hover:shadow-lg transition-all duration-300;
+  }
+
+  /* ── Section helpers ── */
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900;
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+  .section-label {
+    @apply inline-block text-xs font-bold uppercase tracking-widest mb-3;
+    color: var(--brand-pink);
+  }
+  .section-subtitle { @apply text-lg text-gray-500 leading-relaxed; }
+
+  .accent-text        { color: var(--brand-pink); }
+  .accent-text-purple { color: var(--brand-purple); }
+}
+
+/* ─── Hero overlay (solid colour, no gradient) ─── */
+.hero-overlay {
+  @apply absolute inset-0;
+  background-color: rgba(15, 10, 26, 0.62);
+}
+
+/* ─── Progress bar ─── */
+@keyframes progress {
+  from { width: 0; }
+}
+.progress-bar { animation: progress 1.6s cubic-bezier(0.4,0,0.2,1) forwards; }
+
+/* ─── Scroll snap (horizontal) ─── */
+.scroll-snap-x {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  gap: 1.5rem;
+}
+.scroll-snap-x::-webkit-scrollbar { display: none; }
+.snap-item { scroll-snap-align: start; flex-shrink: 0; }
+
+/* ─── Custom scrollbar ─── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #f9f9f9; }
+::-webkit-scrollbar-thumb { background: var(--brand-pink); border-radius: 3px; }
+
+/* ─── Page entry animation ─── */
+.page-enter { animation: fadeUp 0.5s ease both; }
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ─── Form input focus ─── */
+.form-input {
+  @apply w-full px-4 py-3 rounded-xl border-2 border-gray-100 text-sm
+         bg-white transition-colors duration-200 outline-none;
+}
+.form-input:focus { border-color: var(--brand-pink); }
+
+/* ─── Video player override ─── */
+video { max-width: 100%; }
+
+/* ─── Tab active indicator ─── */
+.tab-btn {
+  @apply flex items-center gap-2 px-5 py-4 text-sm font-semibold whitespace-nowrap
+         border-b-2 border-transparent text-gray-500 hover:text-gray-800 transition-all duration-200;
+}
+.tab-btn.active {
+  border-bottom-color: var(--brand-pink);
+  color: var(--brand-pink);
+}
