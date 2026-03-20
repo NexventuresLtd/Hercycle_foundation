@@ -1,3 +1,27 @@
+# HerCycle Foundation App
+
+This project was designed and developed by Nexventures.
+
+## Features
+- Responsive web design for all screens
+- Donation calculator and WhatsApp integration
+- Partner and volunteer forms
+- Modal popups for actions
+- Tailwind CSS and React
+
+## Getting Started
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+## Attribution
+All code, design, and implementation was completed by Nexventures.
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
