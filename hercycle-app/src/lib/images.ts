@@ -14,7 +14,7 @@ export const IMAGES = {
     contact:        `${BASE}/photo-1573497620053-ea5300f94f21?auto=format&fit=crop&w=1920&q=80`,
   },
   sections: {
-    pads:       `https://migro.co.rw/app/upload/images/5069-2024-04-06.jpg`,
+    pads:       `https://murukali.com/cdn/shop/files/Everytime-Pad-murukali-com-2621_1200x1200.jpg?v=1744977769`,
     education:  `https://brokenchalk.org/wp-content/uploads/2023/05/Rwanda_Vvob.jpg`,
     clubs:      `https://images.squarespace-cdn.com/content/v1/577d2a86893fc03a12af8377/1528878089554-EEWCIM1N5NXCTBX0UTKN/image-asset.jpeg`,
     ambassador: `https://pbs.twimg.com/media/F1Iyrc-WIAA2PYb.jpg`,

@@ -6,10 +6,10 @@ import ScrollReveal from '../components/ScrollReveal';
 import { IMAGES } from '../lib/images';
 
 const TIMELINE = [
-  { year: '2023', label: 'Research Phase',         desc: 'Field research in Bugesera and Muhanga reveals critical gaps in menstrual health support for schoolgirls.' },
-  { year: '2024', label: 'Foundation Established', desc: 'HerCycle Foundation officially formed; first school partnership secured in Bugesera district.' },
-  { year: '2024', label: 'Programs Launch',         desc: 'Sanitary pad distribution begins; first HerCycle Club established in a partner school.' },
-  { year: '2025', label: '120 Girls Reached',       desc: 'Full ambassador model operational across 3 schools with active attendance monitoring in place.' },
+  { year: '2025', label: 'Research Phase',         desc: 'Field research in Bugesera and Muhanga reveals critical gaps in menstrual health support for schoolgirls.' },
+  { year: '2025', label: 'Foundation Established', desc: 'HerCycle Foundation officially formed; first school partnership secured in Bugesera district.' },
+  { year: '2026', label: 'Programs Launch',         desc: 'Sanitary pad distribution begins; first HerCycle Club established in a partner school.' },
+  { year: '2026', label: '120 Girls Reached',       desc: 'Full ambassador model operational across 3 schools with active attendance monitoring in place.' },
 ];
 
 const VALUES = [

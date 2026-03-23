@@ -13,7 +13,7 @@ import { getWhatsAppDonationLink, getWhatsAppPartnerLink } from '../lib/constant
 
 const STATS = [
   { icon: Users,     value: 120, suffix: '+', label: 'Girls Reached',           sub: 'Across 3 partner schools' },
-  { icon: School,    value: 3,   suffix: '',  label: 'Schools Engaged',         sub: 'Bugesera & Muhanga districts' },
+  { icon: School,    value: 3,   suffix: '',  label: 'Schools Engaged',         sub: 'Bugesera, Muhanga & Ruhango districts' },
   { icon: Target,    value: 300, suffix: '',  label: 'Target Girls',            sub: 'Current phase goal' },
   { icon: BarChart2, value: 20,  suffix: '%', label: 'Absenteeism Reduction',   sub: 'Target for phase one' },
 ];
@@ -42,7 +42,7 @@ export default function Home() {
             <span style={{ color: '#e8216b' }}>Restoring</span> Confidence
           </>
         }
-        subtitle="Supporting girls to stay in class through menstrual health education, dignity, and sustainable school-based solutions in Rwanda."
+        subtitle="Empowering girls to stay in school through menstrual health education, confidence, and sustainable school-based solutions in Rwanda, because every girl deserves to learn without fear."
         actions={
           <>
             <a
@@ -113,7 +113,7 @@ export default function Home() {
                 />
                 <div className="absolute bottom-4 left-4 bg-white rounded-xl px-5 py-3 shadow-lg">
                   <p className="text-xs text-gray-500 font-medium">Girls supported</p>
-                  <p className="text-2xl font-bold font-serif" style={{ color: '#e8216b' }}>Every Week</p>
+                  <p className="text-2xl font-bold font-serif" style={{ color: '#e8216b' }}>Every Month</p>
                 </div>
               </div>
             </ScrollReveal>
@@ -207,9 +207,9 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { quote: 'HerCycle Foundation has transformed how our girls approach school. Attendance and confidence are visibly improving.', name: 'School Teacher', school: 'Partner School, Muhanga' },
-              { quote: 'Before this program, I stayed home for days each month. Now I come to school every day and feel confident.', name: 'Student Ambassador', school: 'HerCycle Club, Bugesera' },
-              { quote: 'The ambassador model is effective. Girls support each other and the culture in school has completely shifted.', name: 'School Administrator', school: 'Partner School, Muhanga' },
+              { quote: 'Before HerCycle Foundation came to our school, my daughter missed days every month and never told me why. Now she goes to school every day and she comes home confident. I wish every mother in this community could see what one pad a month can change.', name: 'Parent', school: 'Community Member, Ruhango District' },
+              { quote: 'When I have no pad, I use cloth but it leaks. I sit at the back and leave fast if anything happens. Since the pads started coming to our school, I stopped missing class. I stopped being afraid. Now I sit in the front row.', name: 'Student, Age 15', school: 'ES Kamabuye, Bugesera District' },
+              { quote: 'We used to record absences without understanding the real cause. Since HerCycle Foundation began delivering pads to our school each month, girl attendance has visibly improved. The culture here has shifted — students are more confident and teachers are more aware.', name: 'School Administrator', school: 'Partner School, Muhanga District' },
             ].map(({ quote, name, school }, i) => (
               <ScrollReveal key={name} delay={i * 0.12}>
                 <div className="bg-white rounded-2xl p-7 border border-gray-100 shadow-sm hover:shadow-md transition-shadow h-full">
