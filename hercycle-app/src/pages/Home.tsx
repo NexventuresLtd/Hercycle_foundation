@@ -32,7 +32,7 @@ export default function Home() {
     <div className="page-enter">
       {/* ── HERO ── */}
       <HeroSection
-        image={IMAGES.hero.home}
+        image="Sandra (5).jpeg"
         height="screen"
         overlay={60}
         showScroll
@@ -107,7 +107,7 @@ export default function Home() {
             <ScrollReveal direction="left">
               <div className="relative">
                 <img
-                  src={IMAGES.sections.community}
+                  src= "Sandra (5).jpeg"
                   alt="Girls in school, Rwanda"
                   className="w-full h-[420px] object-cover rounded-2xl"
                 />

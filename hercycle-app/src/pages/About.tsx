@@ -24,7 +24,7 @@ export default function About() {
     <div className="page-enter">
       {/* ── HERO ── */}
       <HeroSection
-        image={IMAGES.hero.about}
+        image="Sandra (3).jpeg"
         height="large"
         overlay={62}
         badge="Our Story"
@@ -237,7 +237,7 @@ export default function About() {
 
             <ScrollReveal direction="right">
               <img
-                src={IMAGES.sections.education}
+                src="Sandra (2).jpeg"
                 alt="Education session at partner school"
                 className="w-full h-96 object-cover rounded-2xl shadow-xl"
               />

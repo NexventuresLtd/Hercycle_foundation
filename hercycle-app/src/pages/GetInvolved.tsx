@@ -23,7 +23,7 @@ export default function GetInvolved() {
     <div className="page-enter">
       {/* ── HERO ── */}
       <HeroSection
-        image={IMAGES.hero.getInvolved}
+        image="Sandra (6).jpeg"
         height="large"
         overlay={65}
         badge="Take Action Today"
